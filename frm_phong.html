@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Form Phòng</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            input[type=label]{
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+            input[type=text]{
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+            }
+            input[type=button] {
+                background-color: #04AA6D;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .form{
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .label_css{
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+            .txt_css{
+                float: left;
+                width: 75%;
+                margin-top: 6px;
+            }
+        </style>
+    </head>
+    <body>
+        <center><h2>NHẬP THÔNG TIN PHÒNG</h2></center>
+    <div class="form">
+        <div class="row">
+            <div class="label_css">
+                <label for="id_phong">Nhập mã phòng</label>
+            </div>
+            <div class="txt_css">
+                <input type="text" id="id_phong" name="id_phong">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label_css">
+                <label for="ten_phong">Nhập tên phòng</label>
+            </div>
+            <div class="txt_css">
+                <input type="text" id="ten_phong" name="ten_phong">
+            </div>
+        </div>
+        <div class="row">
+            <input type="button" id="them_phong" name="them_phong" value="Thêm">
+            <input type="button" id="xoa_phong" name="xoa_phong" value="Xóa">
+        </div>
+    </div>
+    </body>
+</html>
