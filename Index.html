@@ -1,0 +1,54 @@
+<html>
+<head>
+  <title>Dynamic Menu</title>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+  </style>
+</head>
+<body>
+<ul id="myMenu">
+  <li><a href="./frm_giangvien.html">Nhập giảng viên</a></li>
+  <li><a href="./frm_phong.html">Nhập Phòng</a></li>
+  <li><a href="./frm_thietbi.html">Nhập thiết bị</a></li>
+  <li><a href="./frm_sudung.html">Nhập thông tin sử dụng</a></li>
+</ul>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var menuItems = document.getElementById("myMenu").getElementsByTagName("li");
+
+    for (var i = 0; i < menuItems.length; i++) {
+      menuItems[i].addEventListener("click", function() {
+        for (var j = 0; j < menuItems.length; j++) {
+          menuItems[j].classList.remove("active");
+        }
+        this.classList.add("active");
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

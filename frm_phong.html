@@ -67,8 +67,13 @@
         </div>
         <div class="row">
             <input type="button" id="sub_frmp" name="sub_frmp" value="Gửi">
-            <input type="button" id="cancel_frmp" name="cancel_frmp" value="Hủy bỏ">
+            <input type="button" id="cancel_frmp" name="cancel_frmp" value="Hủy bỏ" onclick="back()">
         </div>
     </div>
+    <script>
+        function back(){
+            window.history.back();
+        }
+    </script>
     </body>
 </html>

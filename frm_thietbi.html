@@ -81,9 +81,14 @@
                 </div>
                 <div class="row">
                     <input type="button" id="sub_frmtb" name="sub_frmtb" value="Gửi"> 
-                    <input type="button" id="cancel_frmtb" name="cancel_frmtb" value="Hủy bỏ">
+                    <input type="button" id="cancel_frmtb" name="cancel_frmtb" value="Hủy bỏ" onclick="back()">
                 </div>
             </div>          
         </div>
+        <script>
+            function back(){
+                window.history.back();
+            }
+        </script>
     </body>
 </html>
